@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion'
 
 export default function CTAButton({ label = 'GARANTIR ACESSO AGORA', href = '#checkout' }) {
+  const isExternal = href.startsWith('http')
   return (
     <motion.a
       href={href}
+      target={isExternal ? '_blank' : undefined}
+      rel={isExternal ? 'noopener noreferrer' : undefined}
       whileHover={{
         scale: 1.02,
         boxShadow: '0 6px 28px rgba(245,166,35,0.6), 0 0 60px rgba(245,166,35,0.25)',
