@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create *)",
+      "Bash(npx create-vite@latest . --template react)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173)",
+      "Bash(mkdir -p \"C:\\\\Users\\\\Brenno\\\\Documents\\\\Jornada Biblica Kids\\\\.claude\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(find \"/c/Users/Brenno/Documents\" -name \"*.png\" 2>/dev/null | head -30)"
+    ]
+  }
+}
