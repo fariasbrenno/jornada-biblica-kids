@@ -163,18 +163,18 @@ export default function Dobra3Produto() {
             </motion.div>
           </div>
 
-          {/* Coluna direita — imagem */}
+          {/* Coluna direita — imagem (somente desktop) */}
           <motion.div
-            className="md:w-1/2 flex justify-center mt-10 md:mt-0"
+            className="hidden md:flex md:w-1/2 justify-center"
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
             viewport={{ once: true }}
           >
             <img
-              src="/images/jornada-biblia.png"
-              alt="Criança caminhando em direção a cenas bíblicas iluminadas"
-              className="w-full max-w-[300px] md:max-w-[440px] drop-shadow-2xl"
+              src="/images/jesus-criancas.png"
+              alt="Jesus rodeado de crianças felizes"
+              className="w-full max-w-[440px] drop-shadow-xl"
               onError={(e) => { e.currentTarget.parentElement.style.display = 'none' }}
             />
           </motion.div>
@@ -197,11 +197,12 @@ export default function Dobra3Produto() {
           <div className="h-px flex-1" style={{ background: 'linear-gradient(90deg, rgba(245,166,35,0.5), transparent)' }} />
         </motion.div>
 
-        <motion.div variants={fadeUp} className="flex justify-center my-6">
+        {/* Imagem jesus-criancas — somente mobile (no desktop aparece na coluna direita) */}
+        <motion.div variants={fadeUp} className="flex md:hidden justify-center my-6">
           <img
             src="/images/jesus-criancas.png"
             alt="Jesus rodeado de crianças felizes"
-            className="w-full max-w-[320px] md:max-w-[560px] mx-auto drop-shadow-xl"
+            className="w-full max-w-[320px] mx-auto drop-shadow-xl"
             onError={(e) => { e.currentTarget.parentElement.style.display = 'none' }}
           />
         </motion.div>
