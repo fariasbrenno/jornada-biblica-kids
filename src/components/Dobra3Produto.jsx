@@ -109,53 +109,77 @@ export default function Dobra3Produto() {
         viewport={{ once: true, amount: 0.2 }}
         className="relative z-10 max-w-5xl mx-auto"
       >
-        <motion.span
-          variants={fadeUp}
-          className="bg-amber/20 text-amber text-xs font-body font-semibold px-3 py-1 rounded-full inline-block mb-4"
-        >
-          Conheça a solução
-        </motion.span>
+        {/* ── Layout 2 colunas: texto + imagem ── */}
+        <div className="flex flex-col md:flex-row md:items-center md:gap-12">
 
-        <motion.h2
-          variants={fadeUp}
-          className="font-display font-extrabold text-[26px] md:text-[40px] leading-tight"
-        >
-          <span className="text-white">Apresentando a </span>
-          <span
-            style={{
-              background: 'linear-gradient(90deg, #F5A623 0%, #FBBF24 50%, #D97706 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              filter: 'drop-shadow(0 0 16px rgba(245,166,35,0.5))',
-            }}
+          {/* Coluna esquerda — texto */}
+          <div className="md:w-1/2">
+            <motion.span
+              variants={fadeUp}
+              className="bg-amber/20 text-amber text-xs font-body font-semibold px-3 py-1 rounded-full inline-block mb-4"
+            >
+              Conheça a solução
+            </motion.span>
+
+            <motion.h2
+              variants={fadeUp}
+              className="font-display font-extrabold text-[26px] md:text-[40px] leading-tight"
+            >
+              <span className="text-white">Apresentando a </span>
+              <span
+                style={{
+                  background: 'linear-gradient(90deg, #F5A623 0%, #FBBF24 50%, #D97706 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  filter: 'drop-shadow(0 0 16px rgba(245,166,35,0.5))',
+                }}
+              >
+                Jornada Bíblica Kids
+              </span>
+            </motion.h2>
+
+            <motion.p
+              variants={fadeUp}
+              className="font-body font-medium text-[17px] md:text-xl mt-2 leading-relaxed"
+            >
+              <span className="text-white/90">O </span>
+              <span className="font-black text-amber">primeiro</span>{' '}
+              <span className="text-white/90">streaming de vídeo para crianças onde o algoritmo trabalha</span>{' '}
+              <span className="font-bold text-amber">para a fé do seu filho</span>
+              <span className="text-white/90">, não contra ela.</span>
+            </motion.p>
+
+            <motion.div variants={container} className="text-white/90 font-body text-base md:text-lg leading-relaxed space-y-4 mt-6">
+              <motion.p variants={fadeUp}>
+                A Jornada Bíblica Kids não é um repositório bagunçado de desenhos religiosos.
+              </motion.p>
+              <motion.p variants={fadeUp}>
+                É uma jornada guiada e cronológica do Gênesis ao Apocalipse onde cada conto bíblico é um degrau na construção moral da sua criança.
+              </motion.p>
+              <motion.p variants={fadeUp}>
+                Enquanto o YouTube decide aleatoriamente o que seu filho vai assistir a seguir, aqui você decide. A sequência foi cuidadosamente organizada para que cada história construa sobre a anterior, formando uma base bíblica completa do jeito que uma criança de hoje aprende: por meio de vídeo.
+              </motion.p>
+            </motion.div>
+          </div>
+
+          {/* Coluna direita — imagem */}
+          <motion.div
+            className="md:w-1/2 flex justify-center mt-10 md:mt-0"
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            viewport={{ once: true }}
           >
-            Jornada Bíblica Kids
-          </span>
-        </motion.h2>
+            <img
+              src="/images/jornada-biblia.png"
+              alt="Criança caminhando em direção a cenas bíblicas iluminadas"
+              className="w-full max-w-[300px] md:max-w-[440px] drop-shadow-2xl"
+              onError={(e) => { e.currentTarget.parentElement.style.display = 'none' }}
+            />
+          </motion.div>
 
-        <motion.p
-          variants={fadeUp}
-          className="font-body font-medium text-[17px] md:text-xl mt-2 leading-relaxed max-w-2xl"
-        >
-          <span className="text-white/90">O </span>
-          <span className="font-black text-amber">primeiro</span>{' '}
-          <span className="text-white/90">streaming de vídeo para crianças onde o algoritmo trabalha</span>{' '}
-          <span className="font-bold text-amber">para a fé do seu filho</span>
-          <span className="text-white/90">, não contra ela.</span>
-        </motion.p>
-
-        <motion.div variants={container} className="text-white/90 font-body text-base md:text-lg leading-relaxed space-y-4 mt-6 max-w-2xl">
-          <motion.p variants={fadeUp}>
-            A Jornada Bíblica Kids não é um repositório bagunçado de desenhos religiosos.
-          </motion.p>
-          <motion.p variants={fadeUp}>
-            É uma jornada guiada e cronológica do Gênesis ao Apocalipse onde cada conto bíblico é um degrau na construção moral da sua criança.
-          </motion.p>
-          <motion.p variants={fadeUp}>
-            Enquanto o YouTube decide aleatoriamente o que seu filho vai assistir a seguir, aqui você decide. A sequência foi cuidadosamente organizada para que cada história construa sobre a anterior, formando uma base bíblica completa do jeito que uma criança de hoje aprende: por meio de vídeo.
-          </motion.p>
-        </motion.div>
+        </div>
 
         <motion.div variants={fadeUp} className="flex items-center gap-3 mt-10 mb-4">
           <div className="h-px flex-1" style={{ background: 'linear-gradient(90deg, transparent, rgba(245,166,35,0.5))' }} />
@@ -171,15 +195,6 @@ export default function Dobra3Produto() {
             ✦ O que tem dentro da Jornada:
           </p>
           <div className="h-px flex-1" style={{ background: 'linear-gradient(90deg, rgba(245,166,35,0.5), transparent)' }} />
-        </motion.div>
-
-        <motion.div variants={fadeUp} className="flex justify-center my-6">
-          <img
-            src="/images/jesus-criancas.png"
-            alt="Jesus rodeado de crianças felizes"
-            className="w-full max-w-[320px] md:max-w-[560px] mx-auto drop-shadow-xl"
-            onError={(e) => { e.currentTarget.parentElement.style.display = 'none' }}
-          />
         </motion.div>
 
         <motion.div variants={container} className="grid grid-cols-2 md:grid-cols-4 gap-3">
