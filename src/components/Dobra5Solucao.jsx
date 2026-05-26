@@ -50,9 +50,29 @@ export default function Dobra5Solucao() {
       >
         <motion.h2
           variants={fadeUp}
-          className="font-display font-extrabold text-[24px] md:text-[36px] text-primary leading-tight max-w-3xl"
+          className="font-display font-extrabold text-[24px] md:text-[36px] leading-tight max-w-3xl"
         >
-          É por isso que a Jornada Bíblica Kids faz o que nenhuma outra plataforma faz:
+          <span className="text-primary">É por isso que a </span>
+          <span
+            style={{
+              background: 'linear-gradient(90deg, #F5A623, #D97706)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+            }}
+          >
+            Jornada Bíblica Kids
+          </span>
+          <span className="text-primary"> faz o que </span>
+          <span className="relative inline-block text-primary font-black">
+            nenhuma outra plataforma faz
+            <span
+              aria-hidden="true"
+              className="absolute left-0 -bottom-1 w-full h-[3px] rounded-full"
+              style={{ background: 'linear-gradient(90deg, #F5A623, #D97706)' }}
+            />
+          </span>
+          <span className="text-primary">:</span>
         </motion.h2>
 
         <motion.div variants={container} className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
@@ -68,8 +88,13 @@ export default function Dobra5Solucao() {
               className="bg-white rounded-2xl p-5 md:p-6 shadow-sm border-l-4 border-success flex gap-4 items-start cursor-default hover:border-amber/40 transition-colors duration-200"
             >
               <span
-                className="font-display font-black text-success text-2xl flex-shrink-0"
-                style={{ textShadow: '0 0 16px rgba(39,174,96,0.4)' }}
+                className="font-display font-black text-2xl flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center"
+                style={{
+                  background: 'linear-gradient(135deg, #10B981, #059669)',
+                  color: '#fff',
+                  boxShadow: '0 0 16px rgba(16,185,129,0.4)',
+                  fontSize: '14px',
+                }}
               >
                 {d.num}
               </span>

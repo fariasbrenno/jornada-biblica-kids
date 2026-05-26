@@ -107,9 +107,22 @@ export default function Dobra6ParaQuem() {
       >
         <motion.h2
           variants={fadeUp}
-          className="font-display font-extrabold text-[24px] md:text-[36px] text-white leading-tight"
+          className="font-display font-extrabold text-[24px] md:text-[36px] leading-tight"
         >
-          A Jornada Bíblica Kids é para você que:
+          <span
+            style={{
+              background: 'linear-gradient(90deg, #F5A623 0%, #FBBF24 50%, #D97706 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              filter: 'drop-shadow(0 0 12px rgba(245,166,35,0.4))',
+            }}
+          >
+            A Jornada Bíblica Kids
+          </span>
+          <span className="text-white"> é para </span>
+          <span className="text-white font-black underline decoration-amber decoration-2 underline-offset-4">você</span>
+          <span className="text-white"> que:</span>
         </motion.h2>
 
         <motion.div variants={fadeUp} className="flex justify-center my-8">
@@ -122,9 +135,23 @@ export default function Dobra6ParaQuem() {
         </motion.div>
 
         <motion.div variants={container} className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-8">
-          {perfis.map((perfil) => (
-            <motion.div key={perfil} variants={fadeUp} className="flex items-start gap-3">
-              <span className="text-amber text-xl font-bold mt-0.5 flex-shrink-0">›</span>
+          {perfis.map((perfil, i) => (
+            <motion.div
+              key={perfil}
+              variants={fadeUp}
+              className="flex items-start gap-3 rounded-xl p-3 transition-colors duration-200 hover:bg-white/5"
+            >
+              <span
+                className="font-black text-lg mt-0.5 flex-shrink-0"
+                style={{
+                  color: i % 2 === 0 ? '#F5A623' : '#A78BFA',
+                  textShadow: i % 2 === 0
+                    ? '0 0 10px rgba(245,166,35,0.6)'
+                    : '0 0 10px rgba(167,139,250,0.6)',
+                }}
+              >
+                ✦
+              </span>
               <p className="font-body text-white/90 text-base md:text-lg leading-relaxed">{perfil}</p>
             </motion.div>
           ))}
@@ -132,11 +159,26 @@ export default function Dobra6ParaQuem() {
 
         <motion.div
           variants={fadeUp}
-          className="bg-cardDark rounded-2xl p-6 md:p-10 mt-10 text-center"
+          className="rounded-2xl p-6 md:p-10 mt-10 text-center"
+          style={{
+            background: 'rgba(15,10,40,0.7)',
+            border: '1.5px solid rgba(245,166,35,0.25)',
+            boxShadow: '0 0 60px rgba(245,166,35,0.08), 0 4px 32px rgba(0,0,0,0.4)',
+          }}
         >
           <ContadorCrescente />
-          <p className="font-body text-white text-base md:text-xl mt-2">
-            famílias cristãs já transformaram a hora da tela em hora de formação bíblica.
+          <p className="font-display font-bold text-white text-base md:text-xl mt-2">
+            famílias cristãs já transformaram a hora da tela em{' '}
+            <span
+              style={{
+                background: 'linear-gradient(90deg, #F5A623, #FBBF24)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}
+            >
+              hora de formação bíblica.
+            </span>
           </p>
         </motion.div>
       </motion.div>

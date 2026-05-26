@@ -31,9 +31,29 @@ export default function Dobra4Dores() {
       >
         <motion.h2
           variants={fadeUp}
-          className="font-display font-extrabold text-[24px] md:text-[36px] text-primary leading-tight max-w-3xl"
+          className="font-display font-extrabold text-[24px] md:text-[36px] leading-tight max-w-3xl"
         >
-          Se você é mãe (ou pai) cristão, provavelmente já passou por pelo menos uma dessas situações:
+          <span className="text-primary">Se você é </span>
+          <span
+            style={{
+              background: 'linear-gradient(90deg, #7C3AED, #4A5AD9)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+            }}
+          >
+            mãe (ou pai) cristão
+          </span>
+          <span className="text-primary">, provavelmente já passou por </span>
+          <span className="relative inline-block text-danger font-black">
+            pelo menos uma dessas situações
+            <span
+              aria-hidden="true"
+              className="absolute left-0 bottom-0 w-full h-[3px] rounded-full opacity-60"
+              style={{ background: 'linear-gradient(90deg, #EF4444, #DC2626)' }}
+            />
+          </span>
+          <span className="text-primary">:</span>
         </motion.h2>
 
         <motion.div variants={container} className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-8">
@@ -51,10 +71,25 @@ export default function Dobra4Dores() {
 
         <motion.div
           variants={fadeUp}
-          className="bg-cream border border-amber rounded-xl p-5 md:p-8 mt-8 text-center"
+          className="rounded-2xl p-5 md:p-8 mt-8 text-center"
+          style={{
+            background: 'linear-gradient(135deg, rgba(245,166,35,0.12) 0%, rgba(45,27,105,0.08) 100%)',
+            border: '1.5px solid rgba(245,166,35,0.4)',
+            boxShadow: '0 4px 32px rgba(245,166,35,0.1)',
+          }}
         >
-          <p className="font-display font-bold text-primary text-[17px] md:text-xl">
-            Se você se reconheceu em pelo menos uma dessas situações, a Jornada Bíblica Kids foi criada para você.
+          <p className="font-display font-black text-primary text-[18px] md:text-2xl leading-snug">
+            Se você se reconheceu em pelo menos uma dessas situações,{' '}
+            <span
+              style={{
+                background: 'linear-gradient(90deg, #F5A623, #D97706)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}
+            >
+              a Jornada Bíblica Kids foi criada para você.
+            </span>
           </p>
         </motion.div>
       </motion.div>

@@ -28,9 +28,22 @@ export default function Dobra2Problema() {
       >
         <motion.h2
           variants={fadeUp}
-          className="font-display font-extrabold text-[26px] md:text-[36px] text-primary leading-tight"
+          className="font-display font-extrabold text-[26px] md:text-[36px] leading-tight"
         >
-          O problema não é a tela.<br />É o que está dentro dela.
+          <span className="text-primary">O problema não é a tela.</span>
+          <br />
+          <span
+            className="relative inline-block"
+            style={{
+              background: 'linear-gradient(90deg, #F5A623, #D97706)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              filter: 'drop-shadow(0 0 10px rgba(245,166,35,0.35))',
+            }}
+          >
+            É o que está dentro dela.
+          </span>
         </motion.h2>
 
         <div className="flex flex-col md:flex-row md:items-start md:gap-12 mt-8">
@@ -77,9 +90,23 @@ export default function Dobra2Problema() {
             </motion.div>
 
             <motion.div variants={fadeUp} className="text-center mt-10">
-              <p className="font-display font-black text-[36px] md:text-[48px] text-amber">Até agora.</p>
+              <p
+                className="font-display font-black text-[40px] md:text-[56px]"
+                style={{
+                  background: 'linear-gradient(135deg, #F5A623 0%, #D97706 60%, #F5A623 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  filter: 'drop-shadow(0 0 16px rgba(245,166,35,0.5))',
+                  letterSpacing: '-0.01em',
+                }}
+              >
+                Até agora.
+              </p>
               <p className="text-muted font-body text-base md:text-lg mt-1">
-                Existe uma solução que nenhuma plataforma grande oferece.
+                Existe uma solução que{' '}
+                <span className="font-bold text-primary">nenhuma plataforma grande</span>{' '}
+                oferece.
               </p>
             </motion.div>
           </div>

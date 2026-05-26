@@ -118,16 +118,31 @@ export default function Dobra3Produto() {
 
         <motion.h2
           variants={fadeUp}
-          className="font-display font-extrabold text-[26px] md:text-[40px] text-white leading-tight"
+          className="font-display font-extrabold text-[26px] md:text-[40px] leading-tight"
         >
-          Apresentando a Jornada Bíblica Kids
+          <span className="text-white">Apresentando a </span>
+          <span
+            style={{
+              background: 'linear-gradient(90deg, #F5A623 0%, #FBBF24 50%, #D97706 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              filter: 'drop-shadow(0 0 16px rgba(245,166,35,0.5))',
+            }}
+          >
+            Jornada Bíblica Kids
+          </span>
         </motion.h2>
 
         <motion.p
           variants={fadeUp}
-          className="font-body text-amber font-medium text-[17px] md:text-xl mt-2 leading-relaxed max-w-2xl"
+          className="font-body font-medium text-[17px] md:text-xl mt-2 leading-relaxed max-w-2xl"
         >
-          O primeiro streaming de vídeo para crianças onde o algoritmo trabalha para a fé do seu filho, não contra ela.
+          O{' '}
+          <span className="font-black text-amber">primeiro</span>{' '}
+          <span className="text-white/90">streaming de vídeo para crianças onde o algoritmo trabalha</span>{' '}
+          <span className="font-bold text-amber">para a fé do seu filho</span>
+          <span className="text-white/90">, não contra ela.</span>
         </motion.p>
 
         <motion.div variants={container} className="text-white/90 font-body text-base md:text-lg leading-relaxed space-y-4 mt-6 max-w-2xl">
@@ -142,12 +157,21 @@ export default function Dobra3Produto() {
           </motion.p>
         </motion.div>
 
-        <motion.p
-          variants={fadeUp}
-          className="font-display font-bold text-amber text-lg md:text-xl mt-10 mb-4"
-        >
-          O que tem dentro da Jornada:
-        </motion.p>
+        <motion.div variants={fadeUp} className="flex items-center gap-3 mt-10 mb-4">
+          <div className="h-px flex-1" style={{ background: 'linear-gradient(90deg, transparent, rgba(245,166,35,0.5))' }} />
+          <p
+            className="font-display font-black text-lg md:text-xl whitespace-nowrap"
+            style={{
+              background: 'linear-gradient(90deg, #F5A623, #FBBF24)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+            }}
+          >
+            ✦ O que tem dentro da Jornada:
+          </p>
+          <div className="h-px flex-1" style={{ background: 'linear-gradient(90deg, rgba(245,166,35,0.5), transparent)' }} />
+        </motion.div>
 
         <motion.div variants={fadeUp} className="flex justify-center my-6">
           <img

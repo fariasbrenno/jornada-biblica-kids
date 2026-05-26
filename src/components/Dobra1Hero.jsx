@@ -81,12 +81,24 @@ export default function Dobra1Hero() {
           className="font-display font-extrabold text-[32px] md:text-[48px] lg:text-[56px] leading-tight text-primary text-center"
           style={{ textShadow: '0 0 40px rgba(45,27,105,0.15)' }}
         >
-          Seu filho fica horas grudado no celular... mas na hora que você coloca a{' '}
+          Seu filho fica{' '}
           <span
-            className="text-amber"
-            style={{ textShadow: '0 0 20px rgba(245,166,35,0.5)' }}
+            className="font-black text-danger"
+            style={{ textShadow: '0 0 18px rgba(220,38,38,0.3)' }}
+          >
+            horas grudado no celular
+          </span>
+          ... mas na hora que você coloca a{' '}
+          <span
+            className="relative inline-block text-amber"
+            style={{ textShadow: '0 0 24px rgba(245,166,35,0.6)' }}
           >
             Bíblia
+            <span
+              aria-hidden="true"
+              className="absolute left-0 bottom-0 w-full h-[3px] rounded-full"
+              style={{ background: 'linear-gradient(90deg, #F5A623, #D97706)' }}
+            />
           </span>{' '}
           na mão, ele perde o interesse em 2 minutos.
         </motion.h1>
@@ -95,11 +107,15 @@ export default function Dobra1Hero() {
           variants={fadeUp}
           className="bg-warmWhite border-l-4 border-amber rounded-lg p-4 md:p-6 mt-6 text-left"
         >
-          <p className="text-xs font-body font-semibold text-amber uppercase tracking-wide mb-2">
-            Não é culpa dele. É engenharia.
+          <p className="text-sm font-body font-black text-amber uppercase tracking-widest mb-2">
+            ⚠ Não é culpa dele. É engenharia.
           </p>
           <p className="text-ink text-base md:text-lg font-body leading-relaxed">
-            Os algoritmos do YouTube e do TikTok foram projetados por equipes de cientistas comportamentais para viciar o cérebro infantil e nenhum filtro parental do mundo consegue segurar isso por muito tempo.
+            Os{' '}
+            <span className="font-bold text-danger">algoritmos do YouTube e do TikTok</span>{' '}
+            foram projetados por equipes de cientistas comportamentais para{' '}
+            <span className="font-bold text-danger">viciar o cérebro infantil</span>{' '}
+            e nenhum filtro parental do mundo consegue segurar isso por muito tempo.
           </p>
         </motion.div>
 
@@ -133,8 +149,18 @@ export default function Dobra1Hero() {
           <motion.div
             variants={fadeUp}
             className="bg-lilac border-l-4 border-primary rounded-lg p-5 md:p-8 my-4"
+            style={{ boxShadow: '0 4px 32px rgba(45,27,105,0.15), inset 0 1px 0 rgba(255,255,255,0.6)' }}
           >
-            <p className="text-primary font-display font-bold text-xl md:text-2xl italic text-center">
+            <p
+              className="font-display font-black text-xl md:text-3xl italic text-center tracking-tight"
+              style={{
+                background: 'linear-gradient(135deg, #2D1B69 0%, #7C3AED 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                filter: 'drop-shadow(0 0 12px rgba(124,58,237,0.3))',
+              }}
+            >
               "Eu perdi ele para esse algoritmo."
             </p>
           </motion.div>
@@ -144,7 +170,10 @@ export default function Dobra1Hero() {
           </motion.p>
 
           <motion.p variants={fadeUp}>
-            <span className="font-bold">E a pior parte:</span> enquanto o algoritmo trabalha 24 horas por dia para prender a atenção da sua criança, os valores que você quer plantar a Palavra, o caráter, a fé ficam cada vez mais difíceis de transmitir.
+            <span className="font-black text-amber text-lg" style={{ textShadow: '0 0 12px rgba(245,166,35,0.4)' }}>E a pior parte:</span>{' '}
+            enquanto o algoritmo trabalha 24 horas por dia para prender a atenção da sua criança, os valores que você quer plantar —{' '}
+            <span className="font-bold text-primary">a Palavra, o caráter, a fé</span>{' '}
+            — ficam cada vez mais difíceis de transmitir.
           </motion.p>
         </motion.div>
       </motion.div>
