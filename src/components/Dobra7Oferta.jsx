@@ -49,21 +49,23 @@ export default function Dobra7Oferta() {
           {/* ── Card Anual ── */}
           <motion.div
             variants={fadeUp}
-            className="rounded-2xl p-6 md:p-8 relative mt-4 overflow-hidden"
+            className="rounded-2xl p-6 md:p-8 relative mt-4"
             style={{
               background: '#2D1B69',
               boxShadow: '0 0 0 1px rgba(245,166,35,0.4), 0 8px 40px rgba(45,27,105,0.4), inset 0 1px 0 rgba(255,255,255,0.08)',
             }}
           >
-            {/* Raio de luz interno */}
+            {/* Raio de luz interno — overflow isolado no wrapper */}
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute top-0 left-0 w-full rounded-t-2xl"
-              style={{
-                height: 80,
-                background: 'linear-gradient(180deg, rgba(245,166,35,0.12) 0%, transparent 100%)',
-              }}
-            />
+              className="pointer-events-none absolute top-0 left-0 w-full rounded-t-2xl overflow-hidden"
+              style={{ height: 80 }}
+            >
+              <div
+                className="w-full h-full"
+                style={{ background: 'linear-gradient(180deg, rgba(245,166,35,0.12) 0%, transparent 100%)' }}
+              />
+            </div>
 
             {/* Badge pulsante */}
             <motion.span
