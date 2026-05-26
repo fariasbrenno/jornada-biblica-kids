@@ -13,19 +13,19 @@ export default function Dobra31Mockup() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.15 } } }}
-        className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center md:gap-16"
+        className="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:gap-10"
       >
-        <motion.div variants={fadeUp}>
+        <motion.div variants={fadeUp} className="md:w-3/5">
           <div className="w-full mt-8 mb-4">
             <img
               src="/images/mockup-app.png"
               alt="Telas do aplicativo Jornada Bíblica Kids"
-              className="w-full max-w-[520px] md:max-w-full mx-auto rounded-2xl shadow-[0_8px_40px_rgba(45,27,105,0.35)] drop-shadow-xl"
+              className="w-full max-w-[680px] md:max-w-full mx-auto rounded-2xl shadow-[0_8px_40px_rgba(45,27,105,0.35)] drop-shadow-xl"
             />
           </div>
         </motion.div>
 
-        <div className="text-center md:text-left">
+        <div className="md:w-2/5 text-center md:text-left">
           <motion.h2
             variants={fadeUp}
             className="font-display font-extrabold text-[22px] md:text-[36px] text-primary leading-tight"
