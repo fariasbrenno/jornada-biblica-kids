@@ -107,7 +107,7 @@ export default function Dobra6ParaQuem() {
       >
         <motion.h2
           variants={fadeUp}
-          className="font-display font-extrabold text-[24px] md:text-[36px] leading-tight"
+          className="font-display font-extrabold text-[24px] md:text-[36px] leading-tight md:text-center"
         >
           <span
             style={{
