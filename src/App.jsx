@@ -2,6 +2,7 @@ import Dobra1Hero from './components/Dobra1Hero'
 import Dobra2Problema from './components/Dobra2Problema'
 import Dobra3Produto from './components/Dobra3Produto'
 import Dobra31Mockup from './components/Dobra31Mockup'
+import Dobra32AppTrilha from './components/Dobra32AppTrilha'
 import Dobra4Dores from './components/Dobra4Dores'
 import Dobra5Solucao from './components/Dobra5Solucao'
 import Dobra6ParaQuem from './components/Dobra6ParaQuem'
@@ -23,7 +24,9 @@ export default function App() {
       <Dobra3Produto />
       <WaveDivider topColor="#1A1035" bottomColor="#F0EBF8" />
       <Dobra31Mockup />
-      <WaveDivider topColor="#F0EBF8" bottomColor="#FFFFFF" />
+      <WaveDivider topColor="#F0EBF8" bottomColor="#1A1035" />
+      <Dobra32AppTrilha />
+      <WaveDivider topColor="#1A1035" bottomColor="#FFFFFF" />
       <Dobra4Dores />
       <WaveDivider topColor="#FFFFFF" bottomColor="#FDF8F0" />
       <Dobra5Solucao />
