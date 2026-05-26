@@ -197,6 +197,15 @@ export default function Dobra3Produto() {
           <div className="h-px flex-1" style={{ background: 'linear-gradient(90deg, rgba(245,166,35,0.5), transparent)' }} />
         </motion.div>
 
+        <motion.div variants={fadeUp} className="flex justify-center my-6">
+          <img
+            src="/images/jesus-criancas.png"
+            alt="Jesus rodeado de crianças felizes"
+            className="w-full max-w-[320px] md:max-w-[560px] mx-auto drop-shadow-xl"
+            onError={(e) => { e.currentTarget.parentElement.style.display = 'none' }}
+          />
+        </motion.div>
+
         <motion.div variants={container} className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {playlists.slice(0, 4).map((item) => (
             <motion.div
