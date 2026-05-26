@@ -16,7 +16,7 @@ const container = {
 const faqs = [
   {
     q: 'O que é exatamente a Jornada Bíblica Kids?',
-    a: 'É um serviço de streaming de vídeos bíblicos para crianças, organizado em playlists temáticas e cronológicas. Você acessa pelo celular, tablet ou computador, sem precisar baixar nada.',
+    a: 'É um serviço de streaming de vídeos bíblicos para crianças, organizado em playlists temáticas e cronológicas. Funciona como um app: instale direto na tela inicial do celular, tablet ou computador — e dá pra assistir na TV também.',
   },
   {
     q: 'Para qual faixa etária é indicado?',
@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: 'Funciona no celular do meu filho?',
-    a: 'Sim. O acesso é por navegador (Chrome, Safari etc.), é só abrir, fazer login e já está disponível. Funciona em qualquer aparelho com internet.',
+    a: 'Sim! Você instala direto na tela inicial do celular como se fosse um app normal — sem precisar da App Store ou Google Play. Um toque e está instalado. Funciona em celular, tablet, computador e TV.',
   },
   {
     q: 'Tem conteúdo novo sendo adicionado?',

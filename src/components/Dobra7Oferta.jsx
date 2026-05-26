@@ -16,7 +16,7 @@ const inclusos = [
   'Playlist Hora de Dormir',
   'Playlist Momentos de Coragem',
   'Ambiente 100% blindado, sem anúncios',
-  'Acesso pelo celular, tablet ou computador',
+  'App instalável no celular, tablet, computador e TV',
   'Novas histórias adicionadas diariamente',
   'BONUS: Manual de Atividades Bíblicas para Imprimir (PDF entregue imediatamente após o cadastro)',
 ]

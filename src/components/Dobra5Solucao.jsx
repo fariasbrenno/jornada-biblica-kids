@@ -33,8 +33,8 @@ const diferenciais = [
   },
   {
     num: '5',
-    title: 'Acesso imediato, sem complicação técnica',
-    desc: 'Login por e-mail. Funciona no celular, tablet ou computador. Sem download, sem configuração, sem dor de cabeça.',
+    title: 'Instale como app em segundos, sem complicação',
+    desc: 'Adicione direto na tela inicial do celular, tablet ou computador. Funciona como um app nativo — e dá pra assistir na TV também.',
   },
 ]
 

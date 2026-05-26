@@ -31,8 +31,8 @@ const playlists = [
   },
   {
     emoji: '📱',
-    name: 'Acesso em qualquer tela',
-    desc: 'Celular, tablet ou computador. Login e em 30 segundos seu filho já está assistindo.',
+    name: 'Instale como app em qualquer tela',
+    desc: 'Celular, tablet, computador ou TV. Instala direto na tela inicial em segundos, como qualquer outro app.',
     span: false,
   },
   {

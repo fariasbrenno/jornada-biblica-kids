@@ -13,8 +13,8 @@ const container = {
 const passos = [
   {
     num: '1',
-    titulo: 'Assine e receba o acesso',
-    desc: 'Após assinar, você recebe um e-mail com o link para criar sua senha. É só um clique.',
+    titulo: 'Assine e instale o app',
+    desc: 'Após assinar, você recebe o acesso por e-mail e instala o app na tela inicial do celular — como qualquer outro app, sem App Store.',
     tela: 'acesso',
   },
   {
@@ -172,7 +172,7 @@ export default function Dobra32AppTrilha() {
             }}>menos de 2 minutos</span>
           </h2>
           <p className="text-white/60 font-body text-base md:text-lg mt-3 max-w-xl mx-auto">
-            Não precisa instalar nada. Funciona direto no navegador do celular, tablet ou computador.
+            Instale como um app direto na tela inicial do celular, tablet ou computador — rápido, fácil, e dá pra assistir na TV também.
           </p>
         </motion.div>
 
