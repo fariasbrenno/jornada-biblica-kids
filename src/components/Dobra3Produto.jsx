@@ -138,7 +138,7 @@ export default function Dobra3Produto() {
           variants={fadeUp}
           className="font-body font-medium text-[17px] md:text-xl mt-2 leading-relaxed max-w-2xl"
         >
-          O{' '}
+          <span className="text-white/90">O </span>
           <span className="font-black text-amber">primeiro</span>{' '}
           <span className="text-white/90">streaming de vídeo para crianças onde o algoritmo trabalha</span>{' '}
           <span className="font-bold text-amber">para a fé do seu filho</span>
@@ -160,7 +160,7 @@ export default function Dobra3Produto() {
         <motion.div variants={fadeUp} className="flex items-center gap-3 mt-10 mb-4">
           <div className="h-px flex-1" style={{ background: 'linear-gradient(90deg, transparent, rgba(245,166,35,0.5))' }} />
           <p
-            className="font-display font-black text-lg md:text-xl whitespace-nowrap"
+            className="font-display font-black text-xl md:text-3xl whitespace-nowrap"
             style={{
               background: 'linear-gradient(90deg, #F5A623, #FBBF24)',
               WebkitBackgroundClip: 'text',

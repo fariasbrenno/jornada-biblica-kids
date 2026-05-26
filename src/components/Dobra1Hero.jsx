@@ -132,7 +132,13 @@ export default function Dobra1Hero() {
           variants={container}
           className="mt-8 space-y-4 text-ink text-[17px] md:text-lg font-body leading-[1.75]"
         >
-          <motion.p variants={fadeUp}>Você já passou pela cena:</motion.p>
+          <motion.h3
+            variants={fadeUp}
+            className="font-display font-extrabold text-[22px] md:text-[28px] text-primary leading-tight mt-6"
+            style={{ textShadow: '0 0 20px rgba(45,27,105,0.15)' }}
+          >
+            Você já passou pela cena:
+          </motion.h3>
 
           <motion.p variants={fadeUp}>
             Está no meio do trabalho, com mil coisas para resolver, e precisa de dez minutinhos de paz. Coloca o celular na mão do seu filho com um desenho que parece inofensivo e quando você olha de novo, já se passaram quarenta minutos e ele está assistindo a um vídeo completamente diferente, de um canal que você nunca autorizou.
