@@ -202,7 +202,7 @@ export default function Dobra3Produto() {
           <img
             src="/images/jesus-criancas.png"
             alt="Jesus rodeado de crianças felizes"
-            className="w-full max-w-[320px] mx-auto drop-shadow-xl"
+            className="w-full max-w-[420px] mx-auto drop-shadow-xl"
             onError={(e) => { e.currentTarget.parentElement.style.display = 'none' }}
           />
         </motion.div>
