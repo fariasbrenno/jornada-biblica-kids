@@ -68,15 +68,35 @@ export default function Dobra2Problema() {
               Você já tentou de tudo.
             </motion.p>
 
-            <motion.p variants={fadeUp} className="font-body text-ink text-base md:text-lg leading-relaxed mt-3">
-              Colocou senha no YouTube Kids mas os anúncios passam assim mesmo. Baixou aplicativo de controle parental mas quando você não está olhando, ele acha um jeito. Tentou sentar junto para assistir conteúdo cristão mas os vídeos disponíveis são tão desanimados que até você perdeu a paciência.
+            {/* Lista com ícones — cópia original preservada */}
+            <motion.div variants={container} className="mt-4 space-y-4">
+              {[
+                { icon: '🔐', text: 'Colocou senha no YouTube Kids mas os anúncios passam assim mesmo.' },
+                { icon: '📱', text: 'Baixou aplicativo de controle parental mas quando você não está olhando, ele acha um jeito.' },
+                { icon: '😔', text: 'Tentou sentar junto para assistir conteúdo cristão mas os vídeos disponíveis são tão desanimados que até você perdeu a paciência.' },
+              ].map((item) => (
+                <motion.div
+                  key={item.text}
+                  variants={fadeUp}
+                  className="flex items-start gap-4 bg-cream rounded-xl p-4 border border-primary/10"
+                >
+                  <span className="text-2xl flex-shrink-0 mt-0.5">{item.icon}</span>
+                  <p className="font-body text-ink text-base md:text-lg leading-relaxed">{item.text}</p>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            <motion.p variants={fadeUp} className="font-body text-ink text-base md:text-lg leading-relaxed mt-10">
+              A verdade é que <strong>nenhuma outra plataforma</strong> oferece as três coisas que você precisa ao mesmo tempo:
             </motion.p>
 
-            <motion.p variants={fadeUp} className="font-body text-ink text-base md:text-lg leading-relaxed mt-4">
-              A verdade é que não existe uma alternativa que combine as três coisas que você precisa ao mesmo tempo:
-            </motion.p>
+            {/* Label deixando claro que é das outras plataformas */}
+            <motion.div variants={fadeUp} className="flex items-center gap-2 mt-4 mb-2">
+              <span className="text-danger text-base">⚠</span>
+              <p className="text-danger font-body font-bold text-sm uppercase tracking-wide">O que falta nas outras plataformas:</p>
+            </motion.div>
 
-            <motion.div variants={container} className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4">
+            <motion.div variants={container} className="grid grid-cols-1 md:grid-cols-3 gap-3">
               {lacunas.map((text) => (
                 <motion.div
                   key={text}
@@ -102,11 +122,6 @@ export default function Dobra2Problema() {
                 }}
               >
                 Até agora.
-              </p>
-              <p className="text-muted font-body text-base md:text-lg mt-1">
-                Existe uma solução que{' '}
-                <span className="font-bold text-primary">nenhuma plataforma grande</span>{' '}
-                oferece.
               </p>
             </motion.div>
           </div>

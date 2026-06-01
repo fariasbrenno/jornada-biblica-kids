@@ -113,9 +113,11 @@ export default function Dobra1Hero() {
           <p className="text-ink text-base md:text-lg font-body leading-relaxed">
             Os{' '}
             <span className="font-bold text-danger">algoritmos do YouTube e do TikTok</span>{' '}
-            foram projetados por equipes de cientistas comportamentais para{' '}
-            <span className="font-bold text-danger">viciar o cérebro infantil</span>{' '}
-            e nenhum filtro parental do mundo consegue segurar isso por muito tempo.
+            foram projetados por equipes de cientistas para{' '}
+            <span className="font-bold text-danger">viciar o cérebro infantil</span>.{' '}
+            Por isso desenvolvemos a{' '}
+            <span className="font-bold text-primary">Jornada Bíblica Kids</span>{' '}
+            — para edificar o caráter e a fé no coração do seu filho.
           </p>
         </motion.div>
 
@@ -148,44 +150,58 @@ export default function Dobra1Hero() {
             {/* Painel 1 */}
             <motion.div
               variants={fadeUp}
-              className="rounded-2xl p-5 flex flex-col items-center text-center gap-2 border border-amber/20"
+              className="rounded-2xl overflow-hidden border border-amber/20 flex flex-col"
               style={{ background: 'rgba(245,166,35,0.05)' }}
             >
-              <span className="text-4xl">📱</span>
-              <span className="text-xs font-body font-bold text-amber uppercase tracking-widest">O começo</span>
-              <p className="text-ink text-sm font-body leading-relaxed">
-                "Só 10 minutinhos de paz..." — você coloca um desenho que parece inofensivo.
-              </p>
+              {/* Área da imagem */}
+              <div className="w-full aspect-[4/3] overflow-hidden">
+                <img src="/images/quadrinho-1.png" alt="Mãe entregando celular para o filho" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.parentElement.style.background = 'rgba(245,166,35,0.1)' }} />
+              </div>
+              {/* Legenda estilo HQ */}
+              <div className="p-4 border-t border-amber/20">
+                <span className="text-base font-body font-black text-amber uppercase tracking-widest block mb-1">① O começo</span>
+                <p className="text-ink text-sm font-body leading-relaxed">
+                  Você tem mil coisas pra fazer e coloca o celular na mão dele por <strong>10 minutinhos</strong>. Um desenho que parece inofensivo.
+                </p>
+              </div>
             </motion.div>
-
-            {/* Seta — só desktop */}
-            <div className="hidden sm:flex items-center justify-center col-span-0">
-            </div>
 
             {/* Painel 2 */}
             <motion.div
               variants={fadeUp}
-              className="rounded-2xl p-5 flex flex-col items-center text-center gap-2 border border-danger/20"
+              className="rounded-2xl overflow-hidden border border-danger/20 flex flex-col"
               style={{ background: 'rgba(239,68,68,0.04)' }}
             >
-              <span className="text-4xl">⏰</span>
-              <span className="text-xs font-body font-bold text-danger uppercase tracking-widest">40 minutos depois</span>
-              <p className="text-ink text-sm font-body leading-relaxed">
-                Vídeo diferente. Canal que você nunca autorizou. E ele ainda quer mais.
-              </p>
+              {/* Área da imagem */}
+              <div className="w-full aspect-[4/3] overflow-hidden">
+                <img src="/images/quadrinho-2.png" alt="Criança hipnotizada na tela" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.parentElement.style.background = 'rgba(239,68,68,0.1)' }} />
+              </div>
+              {/* Legenda estilo HQ */}
+              <div className="p-4 border-t border-danger/20">
+                <span className="text-base font-body font-black text-danger uppercase tracking-widest block mb-1">② 10 minutos depois</span>
+                <p className="text-ink text-sm font-body leading-relaxed">
+                  Quando você olha de novo: vídeo diferente, canal que você <strong>nunca autorizou</strong>. E ele ainda quer mais.
+                </p>
+              </div>
             </motion.div>
 
             {/* Painel 3 */}
             <motion.div
               variants={fadeUp}
-              className="rounded-2xl p-5 flex flex-col items-center text-center gap-2 border border-primary/20"
+              className="rounded-2xl overflow-hidden border border-primary/20 flex flex-col"
               style={{ background: 'rgba(45,27,105,0.05)' }}
             >
-              <span className="text-4xl">😤</span>
-              <span className="text-xs font-body font-bold text-primary uppercase tracking-widest">Você desliga</span>
-              <p className="text-ink text-sm font-body leading-relaxed">
-                Ele chora. Fica agressivo. Parece outro. E você se sente culpada.
-              </p>
+              {/* Área da imagem */}
+              <div className="w-full aspect-[4/3] overflow-hidden">
+                <img src="/images/quadrinho-3.jpg" alt="Mãe desligando a tela, filho chorando" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.parentElement.style.background = 'rgba(45,27,105,0.1)' }} />
+              </div>
+              {/* Legenda estilo HQ */}
+              <div className="p-4 border-t border-primary/20">
+                <span className="text-base font-body font-black text-primary uppercase tracking-widest block mb-1">③ Você desliga</span>
+                <p className="text-ink text-sm font-body leading-relaxed">
+                  Ele chora. Fica agressivo. Parece outro. E você se sente culpada por algo que <strong>não é culpa sua.</strong>
+                </p>
+              </div>
             </motion.div>
           </motion.div>
 
@@ -212,9 +228,44 @@ export default function Dobra1Hero() {
             </p>
           </motion.div>
 
-          <motion.p variants={fadeUp}>
-            Você não é fraca. Você não é uma mãe ruim. Você foi colocada contra uma das maiores máquinas de engenharia comportamental do mundo construída por corporações bilionárias que lucram com o tempo de tela do seu filho.
-          </motion.p>
+          {/* ── Bloco visual: mãe julgada + corporações ── */}
+          <motion.div variants={container} className="grid grid-cols-1 md:grid-cols-2 gap-4 my-2">
+
+            {/* Imagem 1 — Mãe julgada */}
+            <motion.div variants={fadeUp} className="rounded-2xl overflow-hidden border border-danger/20 flex flex-col">
+              <div className="w-full aspect-[4/3] overflow-hidden">
+                <img
+                  src="/images/mae-julgada.png"
+                  alt="Mãe sendo julgada pela sociedade"
+                  className="w-full h-full object-cover"
+                  onError={(e) => { e.currentTarget.parentElement.style.background = 'rgba(239,68,68,0.1)' }}
+                />
+              </div>
+              <div className="p-4 border-t border-danger/20 flex-1" style={{ background: 'rgba(239,68,68,0.04)' }}>
+                <p className="text-ink text-sm font-body leading-relaxed">
+                  A sociedade te julga: <strong>"Você é fraca"</strong>, <strong>"Você é uma mãe ruim"</strong>.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Imagem 2 — Corporações */}
+            <motion.div variants={fadeUp} className="rounded-2xl overflow-hidden border border-primary/20 flex flex-col">
+              <div className="w-full aspect-[4/3] overflow-hidden">
+                <img
+                  src="/images/corporacoes.png"
+                  alt="Corporações bilionárias manipulando o tempo de tela das crianças"
+                  className="w-full h-full object-cover"
+                  onError={(e) => { e.currentTarget.parentElement.style.background = 'rgba(45,27,105,0.1)' }}
+                />
+              </div>
+              <div className="p-4 border-t border-primary/20 flex-1" style={{ background: 'rgba(45,27,105,0.04)' }}>
+                <p className="text-ink text-sm font-body leading-relaxed">
+                  <strong>Você não é fraca. Você não é uma mãe ruim.</strong> Você foi colocada contra uma das maiores máquinas de engenharia comportamental do mundo — construída por <strong>corporações bilionárias</strong> que lucram com o tempo de tela do seu filho.
+                </p>
+              </div>
+            </motion.div>
+
+          </motion.div>
 
           <motion.p variants={fadeUp}>
             <span className="font-black text-amber text-lg" style={{ textShadow: '0 0 12px rgba(245,166,35,0.4)' }}>E a pior parte:</span>{' '}
