@@ -140,15 +140,56 @@ export default function Dobra1Hero() {
             Você já passou pela cena:
           </motion.h3>
 
-          <motion.p variants={fadeUp}>
-            Está no meio do trabalho, com mil coisas para resolver, e precisa de dez minutinhos de paz. Coloca o celular na mão do seu filho com um desenho que parece inofensivo e quando você olha de novo, já se passaram quarenta minutos e ele está assistindo a um vídeo completamente diferente, de um canal que você nunca autorizou.
-          </motion.p>
+          {/* ── 3 painéis de cena ── */}
+          <motion.div
+            variants={container}
+            className="grid grid-cols-1 sm:grid-cols-3 gap-3 my-2"
+          >
+            {/* Painel 1 */}
+            <motion.div
+              variants={fadeUp}
+              className="rounded-2xl p-5 flex flex-col items-center text-center gap-2 border border-amber/20"
+              style={{ background: 'rgba(245,166,35,0.05)' }}
+            >
+              <span className="text-4xl">📱</span>
+              <span className="text-xs font-body font-bold text-amber uppercase tracking-widest">O começo</span>
+              <p className="text-ink text-sm font-body leading-relaxed">
+                "Só 10 minutinhos de paz..." — você coloca um desenho que parece inofensivo.
+              </p>
+            </motion.div>
 
-          <motion.p variants={fadeUp}>
-            Você desliga a tela. Ele chora. Fica agressivo. Parece outro.
-          </motion.p>
+            {/* Seta — só desktop */}
+            <div className="hidden sm:flex items-center justify-center col-span-0">
+            </div>
 
-          <motion.p variants={fadeUp}>
+            {/* Painel 2 */}
+            <motion.div
+              variants={fadeUp}
+              className="rounded-2xl p-5 flex flex-col items-center text-center gap-2 border border-danger/20"
+              style={{ background: 'rgba(239,68,68,0.04)' }}
+            >
+              <span className="text-4xl">⏰</span>
+              <span className="text-xs font-body font-bold text-danger uppercase tracking-widest">40 minutos depois</span>
+              <p className="text-ink text-sm font-body leading-relaxed">
+                Vídeo diferente. Canal que você nunca autorizou. E ele ainda quer mais.
+              </p>
+            </motion.div>
+
+            {/* Painel 3 */}
+            <motion.div
+              variants={fadeUp}
+              className="rounded-2xl p-5 flex flex-col items-center text-center gap-2 border border-primary/20"
+              style={{ background: 'rgba(45,27,105,0.05)' }}
+            >
+              <span className="text-4xl">😤</span>
+              <span className="text-xs font-body font-bold text-primary uppercase tracking-widest">Você desliga</span>
+              <p className="text-ink text-sm font-body leading-relaxed">
+                Ele chora. Fica agressivo. Parece outro. E você se sente culpada.
+              </p>
+            </motion.div>
+          </motion.div>
+
+          <motion.p variants={fadeUp} className="text-center text-muted text-base font-body">
             E então vem aquele pensamento que nenhuma mãe quer ter:
           </motion.p>
 
