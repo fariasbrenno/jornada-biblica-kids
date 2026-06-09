@@ -6,3 +6,7 @@ dist
 
 # Configuração pessoal do Claude Code (por desenvolvedor)
 .claude/settings.local.json
+
+# Cópia local do app (repo separado — não rastrear aqui)
+app/
+start-app.cjs

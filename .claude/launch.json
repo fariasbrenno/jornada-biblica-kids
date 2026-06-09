@@ -4,8 +4,20 @@
     {
       "name": "jornada-biblica-kids",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--", "--port", "5174"],
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--",
+        "--port",
+        "5174"
+      ],
       "port": 5174
+    },
+    {
+      "name": "jornada-biblica-kids-app",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["start-app.cjs"],
+      "port": 5175
     }
   ]
 }
