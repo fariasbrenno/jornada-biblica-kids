@@ -3,3 +3,6 @@ dist
 .env
 .env.local
 .DS_Store
+
+# Configuração pessoal do Claude Code (por desenvolvedor)
+.claude/settings.local.json
