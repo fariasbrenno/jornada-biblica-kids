@@ -1,10 +1,12 @@
 import Dobra1Hero from './components/Dobra1Hero'
 import Dobra2Problema from './components/Dobra2Problema'
+import Dobra22Depressao from './components/Dobra22Depressao'
 import Dobra25Transicao from './components/Dobra25Transicao'
 import Dobra3Produto from './components/Dobra3Produto'
 import Dobra31Mockup from './components/Dobra31Mockup'
 import Dobra32AppTrilha from './components/Dobra32AppTrilha'
 import Dobra4Dores from './components/Dobra4Dores'
+import Dobra42Desenhos from './components/Dobra42Desenhos'
 import Dobra5Solucao from './components/Dobra5Solucao'
 import Dobra6ParaQuem from './components/Dobra6ParaQuem'
 import Dobra61Depoimentos from './components/Dobra61Depoimentos'
@@ -21,7 +23,9 @@ export default function App() {
       <Dobra1Hero />
       <WaveDivider topColor="#FDF8F0" bottomColor="#FFFFFF" />
       <Dobra2Problema />
-      <WaveDivider topColor="#FFFFFF" bottomColor="#1A1035" />
+      <WaveDivider topColor="#FFFFFF" bottomColor="#FFF5F5" />
+      <Dobra22Depressao />
+      <WaveDivider topColor="#FFF5F5" bottomColor="#1A1035" />
       <Dobra25Transicao />
       <WaveDivider topColor="#1A1035" bottomColor="#1A1035" />
       <Dobra3Produto />
@@ -31,7 +35,9 @@ export default function App() {
       <Dobra32AppTrilha />
       <WaveDivider topColor="#1A1035" bottomColor="#FFFFFF" />
       <Dobra4Dores />
-      <WaveDivider topColor="#FFFFFF" bottomColor="#FDF8F0" />
+      <WaveDivider topColor="#FFFFFF" bottomColor="#1A1035" />
+      <Dobra42Desenhos />
+      <WaveDivider topColor="#1A1035" bottomColor="#FDF8F0" />
       <Dobra5Solucao />
       <WaveDivider topColor="#FDF8F0" bottomColor="#1A1035" />
       <Dobra6ParaQuem />
