@@ -96,7 +96,7 @@ export default function Dobra7Oferta() {
               Você economiza R$ 141,80
             </span>
             <div className="mt-4 relative z-10">
-              <CTAButton label="QUERO GARANTIR MEU ACESSO ANUAL" href="https://pay.kiwify.com.br/AlehDaq" />
+              <CTAButton label="QUERO GARANTIR MEU ACESSO ANUAL" href="https://pay.cakto.com.br/99opqdc" />
             </div>
           </motion.div>
 
@@ -114,7 +114,7 @@ export default function Dobra7Oferta() {
               <p className="font-body text-muted text-base font-normal">/mês</p>
             </div>
             <div className="mt-4">
-              <CTAButton label="QUERO O PLANO MENSAL" href="https://pay.kiwify.com.br/yIvZrxR" />
+              <CTAButton label="QUERO O PLANO MENSAL" href="https://pay.cakto.com.br/s2jvbte_933608" />
             </div>
           </motion.div>
         </motion.div>
