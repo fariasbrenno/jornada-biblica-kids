@@ -37,9 +37,9 @@ const motivos = [
     desc: 'O ambiente é 100% fechado. O que aparece na tela é exatamente o que foi planejado aparecer. Sem algoritmo, sem desvios.',
   },
   {
-    icon: '🇧🇷',
-    titulo: 'Feito por cristãos brasileiros, para crianças brasileiras',
-    desc: 'Uma equipe que compartilha da mesma fé e entende a cultura do seu filho. Não um produto estrangeiro adaptado.',
+    icon: '🤝',
+    titulo: 'Feito de cristão pra cristão',
+    desc: 'Cada episódio nasce de uma equipe que vive a mesma fé que você quer plantar no seu filho. Não é conteúdo estrangeiro adaptado — é missão.',
   },
 ]
 
@@ -57,7 +57,7 @@ export default function Dobra61Depoimentos() {
           variants={fadeUp}
           className="font-display font-bold text-primary text-[22px] md:text-[32px] text-center"
         >
-          Por que confiar na Jornada Bíblica Kids:
+          O que chega junto com o acesso:
         </motion.h2>
 
         <motion.div variants={container} className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
@@ -85,7 +85,7 @@ export default function Dobra61Depoimentos() {
           }}
         >
           <p className="font-display font-black text-primary text-lg md:text-2xl leading-snug">
-            Somos um produto novo. E isso significa que{' '}
+            A garantia de 7 dias não é cortesia — é a nossa forma de dizer que acreditamos{' '}
             <span
               style={{
                 background: 'linear-gradient(90deg, #F5A623, #D97706)',
@@ -94,11 +94,11 @@ export default function Dobra61Depoimentos() {
                 backgroundClip: 'text',
               }}
             >
-              você entra com o menor preço que isso vai ter.
+              no que entregamos.
             </span>
           </p>
           <p className="font-body text-muted text-base mt-3">
-            Quem apoia agora faz parte da história. E tem a garantia de 7 dias para sair sem perder nada.
+            Assine, use, veja com seus próprios olhos e decida. Quem chega cedo caminha com a Jornada enquanto ela cresce — e fica com o menor preço que esse produto vai ter.
           </p>
         </motion.div>
       </motion.div>
