@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 const fadeUp = {
@@ -31,31 +30,6 @@ const stars = [
   { top: '58%', left: '42%', dur: 2.0, delay: 1.6 },
 ]
 
-function ContadorCrescente() {
-  const [count, setCount] = useState(1247)
-
-  useEffect(() => {
-    let timer
-    const tick = () => {
-      setCount(prev => prev + 1)
-      timer = setTimeout(tick, Math.floor(Math.random() * 5000) + 4000)
-    }
-    timer = setTimeout(tick, Math.floor(Math.random() * 5000) + 4000)
-    return () => clearTimeout(timer)
-  }, [])
-
-  return (
-    <motion.p
-      key={count}
-      className="font-display font-black text-[64px] md:text-[96px] text-amber leading-none"
-      initial={{ scale: 1.08 }}
-      animate={{ scale: 1 }}
-      transition={{ duration: 0.3, ease: 'easeOut' }}
-    >
-      {count.toLocaleString('pt-BR')}
-    </motion.p>
-  )
-}
 
 export default function Dobra6ParaQuem() {
   return (
@@ -166,9 +140,17 @@ export default function Dobra6ParaQuem() {
             boxShadow: '0 0 60px rgba(245,166,35,0.08), 0 4px 32px rgba(0,0,0,0.4)',
           }}
         >
-          <ContadorCrescente />
-          <p className="font-display font-bold text-white text-base md:text-xl mt-2">
-            famílias cristãs já transformaram a hora da tela em{' '}
+          <p className="font-body text-amber text-xs uppercase tracking-widest font-semibold mb-3">
+            🚀 Produto em lançamento
+          </p>
+          <p
+            className="font-display font-black text-amber leading-tight"
+            style={{ fontSize: 'clamp(28px, 6vw, 56px)' }}
+          >
+            Seja um dos primeiros fundadores
+          </p>
+          <p className="font-display font-bold text-white text-base md:text-xl mt-3 max-w-xl mx-auto leading-relaxed">
+            Quem entra agora ajuda a construir a Jornada Bíblica Kids{' '}
             <span
               style={{
                 background: 'linear-gradient(90deg, #F5A623, #FBBF24)',
@@ -177,7 +159,7 @@ export default function Dobra6ParaQuem() {
                 backgroundClip: 'text',
               }}
             >
-              hora de formação bíblica.
+              e garante o menor preço que esse produto vai ter.
             </span>
           </p>
         </motion.div>
