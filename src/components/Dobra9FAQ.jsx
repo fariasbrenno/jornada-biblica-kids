@@ -51,6 +51,10 @@ const faqs = [
     a: 'Sim. Temos planos para uso coletivo. Entre em contato pelo e-mail ou WhatsApp para condições especiais.',
   },
   {
+    q: 'Por que pagar se tem Superbook e YouVersion Kids de graça?',
+    a: 'São produtos diferentes. O Superbook tem aproximadamente 60 episódios de histórias selecionadas — ótimo, mas é um catálogo fixo, sem atualização. O YouVersion Kids tem atividades interativas, não uma narrativa em vídeo. A Jornada Bíblica Kids é o único app que leva sua criança do Gênesis ao Apocalipse em vídeos originais, com novos episódios adicionados todo dia. Não é uma questão de gratuito vs. pago — é uma questão de o que você quer que seu filho assista.',
+  },
+  {
     q: 'Tem garantia?',
     a: 'Sim. Se nos primeiros 7 dias você sentir que o produto não é para a sua família, devolvemos 100% do valor sem perguntas e sem burocracia.',
   },

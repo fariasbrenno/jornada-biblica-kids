@@ -143,11 +143,10 @@ export default function Dobra3Produto() {
               variants={fadeUp}
               className="font-body font-medium text-[17px] md:text-xl mt-2 leading-relaxed"
             >
-              <span className="text-white/90">O </span>
-              <span className="font-black text-amber">primeiro</span>{' '}
-              <span className="text-white/90">streaming de vídeo para crianças onde o algoritmo trabalha</span>{' '}
-              <span className="font-bold text-amber">para a fé do seu filho</span>
-              <span className="text-white/90">, não contra ela.</span>
+              <span className="text-white/90">O único streaming onde cada episódio leva seu filho </span>
+              <span className="font-black text-amber">um passo mais longe na Palavra</span>
+              <span className="text-white/90"> — do Gênesis ao Apocalipse, em vídeos que </span>
+              <span className="font-bold text-amber">ele mesmo vai pedir pra assistir.</span>
             </motion.p>
 
             <motion.div variants={container} className="text-white/90 font-body text-base md:text-lg leading-relaxed space-y-4 mt-6">
